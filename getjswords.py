@@ -270,7 +270,7 @@ def main(jsFile):
             content = req.content.decode('utf-8','replace')
             words = getWords(content)
             for word in words:
-                print(word)
+                print(jsFile,word)
         except Exception as err:
             sys.exit(print(err))
 
